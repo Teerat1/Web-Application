@@ -9,10 +9,18 @@
                 <td>ID</td>
                 <td>Name</td>
                 <td>Amount</td>
+                <td>Status</td>
             </tr>
+<script>
+    function App(){
+        document.getElementbyname ("Status").value="approve";
+        
+        
 
 
+    }
 
+</script>
 <?php
 
 require("connect.php");
@@ -28,7 +36,8 @@ $result = mysqli_query($conn, $sql);
                 echo "<td><input type='text' name='ID' size='13' value=" . $row["ID"]. " readonly></td>";
                 echo "<td><input type='text' name='Name' size='30' value=" . $row["Name"]. " readonly></td>";
                 echo "<td><input type='text' name='Amount' size='8' value=" . $row["Amount"]. " readonly></td>";    
-                      
+                echo "<td><input type='text' name='Status' size='15' value=" . $row["Status"]. " readonly></td>";
+                echo "<input type='button' name='Approve' value='Approve'onclick='App()'>";
             echo "</tr>";
             //echo"</form>";
         }

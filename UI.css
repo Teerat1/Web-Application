@@ -32,7 +32,7 @@ b2{
 t1{
     position: absolute;
     top: 150px;
-    left: 700px;
+    left: 650px;
 }
 h8{
     position: absolute;
@@ -64,5 +64,11 @@ h2{
     position: absolute;
     top:100px;
     left:900px;
+    font-size: 30px;
+}
+h3{
+    position: absolute;
+    top: 500px;
+    left: 902px;
     font-size: 30px;
 }

@@ -1,3 +1,8 @@
+<html>
+<head>
+    <link rel="stylesheet" href="UI.css">
+</head>
+</html>
 <?php
     require("connect.php");
     $ID = $_REQUEST['text1'];
